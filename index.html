@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Challeng</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="img/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section >
+        <div class="circle"></div>
+        <div class="content">
+            <div class="contentText">
+                <h2>It's not just a Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis 
+                    repellat incidunt adipisci suscipit ut blanditiis illo quod deserunt reprehenderit,
+                     at nobis voluptas omnis sed ducimus numquam modi tempora tenetur labore!
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="contentImg">
+                <img src="img/img1.png" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="changeIMG('img/img1.png','#017143')"></li>
+            <li><img src="img/thumb2.png" onclick="changeIMG('img/img2.png','#eb7495')"></li>
+            <li><img src="img/thumb3.png" onclick="changeIMG('img/img3.png','#d752d7')"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+    
+    function changeIMG(image,color){
+        document.querySelector('.contentImg img').src = image
+        document.querySelector('.circle').style.background = color
+    }
+
+    
+    </script>
+</body>
+</html>
